@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+height: 100%;
+width: 100%;
+
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+#nav h1{
+    
+    height: 100%;
+    width: 16%;
+    margin: 0;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  
+}
+#nav h3{
+    height: 100%;
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    border-left: 2px solid black;
+    border-right:2px solid black ;
+}form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+form input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    /* border-radius: 15; */
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+}
+
+/* Input themes */
+form input {
+    background-color: #a39e9e;
+    color: rgb(0, 0, 0);
+}
+
+
+
+form input:hover {
+    cursor: text;
+}
+
+button {
+    border: none;
+    outline: none; 
+    background-color: rgb(202, 203, 204);
+    padding: 10px;
+    transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+}
+#myUnOrdList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.todo-list {
+    min-width: 25%;
+
+    /* To remove the bullets of unordered list */
+    list-style: none;
+}
+
+.todo {
+    margin: 1rem;
+    /* background: rgb(247, 226, 223); */
+    /* color: black; */
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 0.5em;
+    border-radius: 30px;
+    transition: background-color 200ms ease-in-out;
+}
+
+/* Items themes */
+.standard-todo {
+    background-color: rgb(26, 27, 27);
+}
+
+.light-todo {
+    background-color:#AEB1B4;
+}
+
+.darker-todo {
+    background-color: #01394c;
+}
+
+.todo li{
+    padding: 7px;
+    /* word-wrap: break-word; */
+    /* flex-wrap: wrap; */
+    font-size: 20px;
+    flex: 1; /* To push the trash and the check button to the right */
+    border-radius: 30px;
+
+    /* wraps the links */
+    overflow-wrap: anywhere;
+}
+
+.check-btn, .delete-btn {
+    font-size: 19px;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 80%;
+    margin: 0 5px;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check { 
+    pointer-events: none;
+}
+
+
+.completed {
+    transition: 0.2s;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transition: 0.5s;
+    transform: translateY(45rem) rotateZ(45deg);
+    opacity: 0;
+}
+/* Dark mode body styling */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Dark mode nav styling */
+body.dark-mode #nav {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+/* Dark mode input and buttons */
+body.dark-mode input {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: #777;
+}
