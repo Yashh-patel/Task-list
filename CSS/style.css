@@ -167,7 +167,7 @@ button:hover {
 
 .fall {
     transition: 0.5s;
-    transform: translateY(45rem) rotateZ(45deg);
+    transform: translateY(75rem) rotateZ(75deg);
     opacity: 0;
 }
 /* Dark mode body styling */
