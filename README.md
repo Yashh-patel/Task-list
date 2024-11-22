@@ -11,15 +11,6 @@ A simple and interactive **Task List** application built using **HTML**, **CSS**
 - **Delete Tasks**: Remove tasks from the list instantly.
 - **Dark/Light Mode**: Switch between light and dark themes for a personalized experience.
 
----
-
-## Preview
-
-![App Screenshot](screenshot.png)  
-*Screenshot of the Task List App in action.*
-
----
-
 ## Installation
 
 1. Clone the repository to your local machine:
